@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <style>
+        @mixin circle($size){
+	height: $size;
+	width: $size;
+	border-radius: $size;
+	-moz-border-radius: $size;
+	-webkit-border-radius: $size;
+}
+
+    .red-circle{
+        display: inline-block;
+        margin-right: 10px;
+        @include circle(50px);
+        background: red;
+    }
+    .blue-circle{
+        display: inline-block;
+        margin-right: 10px;
+        @include circle(75px);
+        background: blue;
+    }
+    .green-circle{
+        display: inline-block;
+        margin-right: 10px;
+        @include circle(100px);
+        background: green;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <div class="red-circle">d</div>
+    <div class="blue-circle">x</div>
+    <div class="green-circle">x</div>
+
+</body>
+
+
+</html>
