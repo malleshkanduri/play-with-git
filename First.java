@@ -1,7 +1,13 @@
+import java.util.List;
+import java.util.Arrays;
+
 public class First {
     static public void main(String str[]) {
-        System.out.println(" Hello from First....");
-        System.out.println("To non master branch....");
-        System.out.println("Third commit..")
+        List<String> list = Arrays.asList("one", "two", "three");
+
+         list
+            .stream()
+            .filter(x -> x.startsWith("o"))
+            .forEach(System.out::println);
     }
 }
